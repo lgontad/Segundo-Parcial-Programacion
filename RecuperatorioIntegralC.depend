@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1532744291 source:c:\users\lenin\documents\lgontad\recuperatoriointegralc\segundo-parcial-programacion\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1532744291 c:\users\lenin\documents\lgontad\recuperatoriointegralc\segundo-parcial-programacion\arraylist.h
+
+1532745140 source:c:\users\lenin\documents\lgontad\recuperatoriointegralc\segundo-parcial-programacion\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<strings.h>
+	"Parser.h"
+
+1532745267 c:\users\lenin\documents\lgontad\recuperatoriointegralc\segundo-parcial-programacion\funciones.h
+	"ArrayList.h"
+
+1532744886 source:c:\users\lenin\documents\lgontad\recuperatoriointegralc\segundo-parcial-programacion\funciones.c
+	<stdio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	<time.h>
+	"ArrayList.h"
+	"funciones.h"
+
+1532745159 c:\users\lenin\documents\lgontad\recuperatoriointegralc\segundo-parcial-programacion\parser.h
+	"ArrayList.h"
+	<stdio.h>
+	"ArrayList.h"
+	"Funciones.h"
+
+1532745140 source:c:\users\lenin\documents\lgontad\recuperatoriointegralc\segundo-parcial-programacion\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Parser.h"
+	<string.h>
+
