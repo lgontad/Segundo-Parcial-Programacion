@@ -18,12 +18,12 @@ int menu();
 int main()
 {
     ArrayList* letras;
-    ArrayList* clonada;
-    ArrayList* repetido;
+    ArrayList* depurado;
+    ArrayList* repetidos;
 
     letras=al_newArrayList();
-    repetido=al_newArrayList();
-    clonada = al_newArrayList();
+    repetidos=al_newArrayList();
+    depurado = al_newArrayList();
     int opcion;
     char respuesta='s';
     int opcion1=0;
@@ -59,17 +59,19 @@ int main()
             switch(opcion1)
             {
             case 1:
-                clonada= letras->clone(letras);
-                clonada->sort(clonada,ordenar,1);
-                printAll(clonada);
+                repetidos=al_clone(letras);
+                buscarLetraRepetida(letras,repetidos,depurado);
+                repetidos->sort(repetidos,comparaLetras,0);
+                printf("\nletras repetidas\n");
+                printAll(repetidos);
                 system("pause");
                 break;
-            case 2:
-                clonada= letras->clone(letras);
+            /*case 2:*/
+               /* clonada= letras->clone(letras);
                 clonada->sort(clonada,ordenar,0);
                 printAll(clonada);
                 system("pause");
-                break;
+                break;*/
             }
     default:
     break;

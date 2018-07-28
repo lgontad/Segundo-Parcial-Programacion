@@ -81,19 +81,6 @@ void printAll(ArrayList* this)
     int len=this->len(this);
     eLetra* aux;
     printf("\nid\tletra\tNombre\t\t\tvocal\tconsonante\t");
-    /*for(i=0;i<50;i++)
-    {
-
-
-        aux=this->get(this,i);
-        if(aux!=NULL)
-        {
-            printf("\n%d\t",i);
-            printOne(aux);
-        }
-    }
-    printf("\n\n");
-    system("pause");*/
     for(i=0;i<len;i++)
     {
 
@@ -258,6 +245,84 @@ int WriteVocal(ArrayList* this)
         printf("\nArchivo guardado con exito\n ");
     }
     fclose(pFile);
+}
+
+char comparaLetras(void* letraA, void* letraB)
+{
+    int retorno;
+    if(get_letra((eLetra*)letraA)>get_letra((eLetra*)letraB))
+    {
+        retorno=1;
+    }
+    else if(get_letra((eLetra*)letraA)<get_letra((eLetra*)letraB))
+    {
+        retorno=-1;
+    }
+    else
+    {
+        retorno=0;
+    }
+    return retorno;
+}
+
+
+char buscarLetraRepetida(ArrayList* this, ArrayList* repetidos, ArrayList* depurado)
+{
+    int retorno=-1;
+    int i;
+    int j;
+    int flag=0;
+    eLetra* letra;
+    eLetra* aux;
+    if(this!=NULL&&repetidos!=NULL&&depurado!=NULL)
+    {
+        for(i=0; i<this->len(this)-1; i++)
+        {
+            aux=this->get(this,i);
+            if((comprobarSiLetraEsRepetida,aux)==0)
+            {
+                flag=0;
+                for(j=i+1; j<this->len(this); j++)
+                {
+                    letra=this->get(this,j);
+                    if(get_letra(aux)==get_letra(letra))
+                    {
+                        repetidos->add(repetidos,letra);
+                    }
+                    if(flag==0)
+                    {
+                        depurado->remove(depurado,i);
+                        flag==1;
+                    }
+                }
+            }
+        }
+        /*repetidos->sort(repetidos,comparaLetras,0);
+        printf("\nletras repetidas\n");
+        printAll(repetidos);
+        system("pause");
+        system("cls");
+        depurado->sort(depurado,comparaLetras,1);
+        printf("\nNumeros que no se repitieron\n");
+        printAll(depurado);*/
+    }
+}
+
+char comprobarSiLetraEsRepetida(ArrayList* repetido, eLetra* aux)
+{
+    int retorno=0;
+    eLetra* auxiliar;
+    int i;
+    for(i=0;i<repetido->len(repetido);i++)
+    {
+        auxiliar=repetido->get(repetido,i);
+        if(get_letra(auxiliar)==get_letra(aux))
+        {
+            retorno=-1;
+            break;
+        }
+    }
+    return retorno;
 }
 
 
