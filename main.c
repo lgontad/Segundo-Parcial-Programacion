@@ -59,19 +59,19 @@ int main()
             switch(opcion1)
             {
             case 1:
-                repetidos=al_clone(letras);
+                depurado=al_clone(letras);
                 buscarLetraRepetida(letras,repetidos,depurado);
-                repetidos->sort(repetidos,comparaLetras,0);
-                printf("\nletras repetidas\n");
+                /*repetidos->sort(repetidos,comparaLetras,0);*/
+                /*printf("\nletras repetidas\n");
                 printAll(repetidos);
-                system("pause");
+                system("pause");*/
                 break;
-            /*case 2:*/
-               /* clonada= letras->clone(letras);
-                clonada->sort(clonada,ordenar,0);
-                printAll(clonada);
-                system("pause");
-                break;*/
+            case 2:
+                depurado=al_clone(letras);
+                buscarLetraRepetida(letras,repetidos,depurado);
+                depurado->sort(depurado,comparaLetras,1);
+                printf("\nNumeros que no se repitieron\n");
+                printAll(depurado);
             }
     default:
     break;

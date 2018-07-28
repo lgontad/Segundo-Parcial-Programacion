@@ -7,7 +7,7 @@
 
 1532744291 c:\users\lenin\documents\lgontad\recuperatoriointegralc\segundo-parcial-programacion\arraylist.h
 
-1532751175 source:c:\users\lenin\documents\lgontad\recuperatoriointegralc\segundo-parcial-programacion\main.c
+1532753337 source:c:\users\lenin\documents\lgontad\recuperatoriointegralc\segundo-parcial-programacion\main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio.h>
@@ -16,10 +16,10 @@
 	<strings.h>
 	"Parser.h"
 
-1532751327 c:\users\lenin\documents\lgontad\recuperatoriointegralc\segundo-parcial-programacion\funciones.h
+1532753119 c:\users\lenin\documents\lgontad\recuperatoriointegralc\segundo-parcial-programacion\funciones.h
 	"ArrayList.h"
 
-1532751327 source:c:\users\lenin\documents\lgontad\recuperatoriointegralc\segundo-parcial-programacion\funciones.c
+1532752790 source:c:\users\lenin\documents\lgontad\recuperatoriointegralc\segundo-parcial-programacion\funciones.c
 	"Funciones.h"
 	<stdio.h>
 

@@ -32,8 +32,8 @@ int get_consonante(eLetra* this);
 void printAll(ArrayList* this);
 void printOne(eLetra* this);
 int  funcionQueFiltra(void* elemento,char* palabra);
-char comprobarSiLetraEsRepetida(ArrayList* repetido, eLetra* aux);
-char buscarLetraRepetida(ArrayList* this, ArrayList* repetidos, ArrayList* depurada);
+char comprobarSiLetraEsRepetida(ArrayList* this, eLetra* aux);
+char buscarLetraRepetida(ArrayList* this, ArrayList* repetidos, ArrayList* depurado);
 char comparaLetras(void* letraA, void* letraB);
 int ordenar(void* letraA,void* letraB);
 

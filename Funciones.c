@@ -288,6 +288,7 @@ char buscarLetraRepetida(ArrayList* this, ArrayList* repetidos, ArrayList* depur
                     if(get_letra(aux)==get_letra(letra))
                     {
                         repetidos->add(repetidos,letra);
+
                     }
                     if(flag==0)
                     {
@@ -297,6 +298,7 @@ char buscarLetraRepetida(ArrayList* this, ArrayList* repetidos, ArrayList* depur
                 }
             }
         }
+        printAll(repetidos);
         /*repetidos->sort(repetidos,comparaLetras,0);
         printf("\nletras repetidas\n");
         printAll(repetidos);
@@ -308,14 +310,14 @@ char buscarLetraRepetida(ArrayList* this, ArrayList* repetidos, ArrayList* depur
     }
 }
 
-char comprobarSiLetraEsRepetida(ArrayList* repetido, eLetra* aux)
+char comprobarSiLetraEsRepetida(ArrayList* this, eLetra* aux)
 {
     int retorno=0;
     eLetra* auxiliar;
     int i;
-    for(i=0;i<repetido->len(repetido);i++)
+    for(i=0;i<this->len(this);i++)
     {
-        auxiliar=repetido->get(repetido,i);
+        auxiliar=this->get(this,i);
         if(get_letra(auxiliar)==get_letra(aux))
         {
             retorno=-1;
