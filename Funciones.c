@@ -51,11 +51,37 @@ int get_consonante(eLetra* this)
 
 void printAll(ArrayList* this)
 {
+   /* int i, len;
+    int contador = 0;
+    eLetra* g;
+    if(lista!=NULL)
+    {
+        len=lista->len(lista);
+        printf("\nLetra\t| Nombre\t| Vocal\t| Consonante\n");
+        for(i=0; i<len; i++)
+        {
+            g=lista->get(lista,i);
+            if(let_getEstado(g)!=0)
+            {
+                printf("\n%c\t| %s\t| %d\t| %d",let_getLetra(g),let_getNombre(g),let_getVocal(g),let_getConsonante(g));
+            }
+            contador++;
+            if(contador == 50 || contador == 100)
+            {
+                printf("\n");
+                system("pause");
+            }
+        }
+        printf("\n");
+    }
+}*/
+
+
     int i;
     int len=this->len(this);
     eLetra* aux;
     printf("\nid\tletra\tNombre\t\t\tvocal\tconsonante\t");
-    for(i=0;i<50;i++)
+    /*for(i=0;i<50;i++)
     {
 
 
@@ -67,7 +93,7 @@ void printAll(ArrayList* this)
         }
     }
     printf("\n\n");
-    system("pause");
+    system("pause");*/
     for(i=0;i<len;i++)
     {
 
@@ -94,20 +120,20 @@ void printOne(eLetra* this)
     }
     if(get_vocal(this)==0)
     {
-        printf("\tNO");
+        printf("\t0");
     }
     else if(get_vocal(this)==1)
     {
-        printf("\tSI");
+        printf("\t1");
     }
 
     if(get_consonante(this)==0)
     {
-        printf("\tNO");
+        printf("\t0");
     }
     else if(get_consonante(this)==1)
     {
-        printf("\tSI");
+        printf("\t1");
     }
 
 }

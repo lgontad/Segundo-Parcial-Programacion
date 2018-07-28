@@ -44,7 +44,7 @@ int main()
         system("pause > nul");
         break;
 
-   /* case 2:
+   case 2:
         printf("\n---Lista de Letras---\n");
         printAll(letras);
         printf("\n\n---Presione una tecla para salir---\n");
@@ -70,7 +70,7 @@ int main()
                 printAll(clonada);
                 system("pause");
                 break;
-            }*/
+            }
     default:
     break;
     }

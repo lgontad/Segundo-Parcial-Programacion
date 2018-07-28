@@ -58,6 +58,7 @@ int parserRead(ArrayList* this)
     }
 }
 
+
 int parserWrite(ArrayList* this)
 {
     int i;
